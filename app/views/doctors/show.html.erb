@@ -1,0 +1,5 @@
+<% @appointments.each do |appt| %>
+  <%= link_to appt.patient.name, appt.patient %>
+  <%= appt.readable %>
+
+<% end %>
